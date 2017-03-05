@@ -8,9 +8,8 @@ public class Main {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
-		
+
 		/* part 1*/
-		
 		
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		
@@ -19,7 +18,6 @@ public class Main {
 		
 		
 		double r=Double.parseDouble(br.readLine());
-		
 		
 		double s=r*r*Math.PI;
 		double p=2*r*Math.PI;
