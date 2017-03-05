@@ -8,7 +8,9 @@ public class Main {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
+		
 		/* part 1*/
+		
 		
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		
