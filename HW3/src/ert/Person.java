@@ -70,4 +70,12 @@ public class Person {
 		
 		System.out.println(" Successful");
 	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", birthYear=" + birthYear + "]";
+	}
+	
+	
+	
 }
