@@ -1,0 +1,29 @@
+package ru.msu.cmc.sp.bbbb; 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class bbbb {
+    public static  void main (String [] args)throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("введіть ціну першого дзвінка за хвилину");
+        int c1 = Integer.parseInt(br.readLine());
+        System.out.println("введіть час дзвінку");
+        int t1 = Integer.parseInt(br.readLine());
+        System.out.println("введіть ціну другого дзвінка за хвилину");
+        int c2 = Integer.parseInt(br.readLine());
+        System.out.println("введіть час дзвінку");
+        int t2 = Integer.parseInt(br.readLine());
+        System.out.println("введіть ціну третього дзвінка за хвилину");
+        int c3 = Integer.parseInt(br.readLine());
+        System.out.println("введіть час дзвінку");
+        int t3 = Integer.parseInt(br.readLine());
+        int a = c1*t1;
+        int b = c2*t2;
+        int c = c3*t3;
+        int d = a+b+c;
+        System.out.println("вартість першого дзвінка "+a);
+        System.out.println("вартість другого дзвінка "+b);
+        System.out.println("вартість третього дзвінка "+c);
+        System.out.println("вартість всіх дзвінків "+d);
+    }
+}
