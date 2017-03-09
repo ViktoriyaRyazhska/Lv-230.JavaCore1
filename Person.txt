@@ -1,0 +1,81 @@
+package hhw;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+
+public class Person {
+
+	private String name;
+	private int birthdayYear;
+	
+	public Person() {
+		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getBirthYear() {
+		return birthdayYear;
+	}
+
+	public void setBirthYear(int birthYear) {
+		this.birthdayYear = birthYear;
+	}
+
+	public Person(String name, int birthYear) {
+		
+		this.name = name;
+		this.birthdayYear = birthYear;
+	}
+	
+	public void age(int thisYear){
+		System.out.println(thisYear-birthdayYear);
+		
+	}
+	
+	public void input() throws IOException{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("Enter name:");
+		this.name=br.readLine();
+		
+		System.out.println("Enter the birthday year:");
+		this.birthdayYear=Integer.parseInt(br.readLine());
+		
+		System.out.println("Enter Successful");
+		
+	}
+	
+	public void output(){
+		
+		System.out.println("Hi. It's "+name+". The birthday year is " +birthdayYear);
+	}
+	
+	public void changeName() throws IOException{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter name of Person to change:");
+		
+		this.name = br.readLine();
+		
+		System.out.println(" Successful");
+	}
+
+	
+	public String toString() {
+		return "Person [name=" + name + ", birthdayYear=" + birthdayYear + "]";
+	}
+	
+	
+	
+}
