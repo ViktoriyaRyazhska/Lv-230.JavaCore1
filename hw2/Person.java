@@ -31,8 +31,8 @@ import java.io.InputStreamReader;
     }
 
     public Person() {
-    }
 
+    }
     @Override
     public String toString() {
         return "Person{" +
@@ -45,24 +45,33 @@ import java.io.InputStreamReader;
         this.name = name;
         this.birthYear = birthYear;
     }
-    public static void input(){
-
+    public  void input()throws IOException{
+          BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+          System.out.println("Enter the name");
+          this.name = br.readLine();
+          System.out.println("Enter the year of birth");
+          this.birthYear = Integer.parseInt(br.readLine());
 
     }
 
-    public void changeName(){
-
+    public void changeName(String name)throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter a new name");
+        this.name = br.readLine();
+         this.name = name;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args)throws IOException {
         Person p1 = new Person();
-        p1.setName("Bob");
-        p1.setBirthYear(1977);
-        Person p2 = new Person("Jack",1985);
-        Person p3 = new Person("Nick",1956);
-        Person p4 = new Person("Olga",1998);
-        Person p5 = new Person("Peter",1941);
-        System.out.println(p1);
+        Person p2 = new Person();
+        Person p3 = new Person();
+        Person p4 = new Person();
+        Person p5 = new Person();
+        p1.input();
+        p2.input();
+        p3.input();
+        p4.input();
+        p5.input();
         System.out.println(p2);
         System.out.println(p3);
         System.out.println(p4);
