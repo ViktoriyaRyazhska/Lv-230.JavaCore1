@@ -9,5 +9,4 @@ Additional courses:
 link
  - my-learning.center
 
- - enrolment key: gtOP98%?
-
+vryazhskaya@gmail.com
