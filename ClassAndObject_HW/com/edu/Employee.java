@@ -56,8 +56,8 @@ public class Employee {
 	}
 
 	public double salary() {
-		double salary = rate * hours;
-		return salary;
+		
+		return rate * hours;
 	}
 
 	@Override

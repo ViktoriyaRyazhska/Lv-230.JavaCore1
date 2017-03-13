@@ -3,6 +3,7 @@ package com.edu;
 import java.util.Scanner;
 
 public class Person {
+
 	private String name;
 	private int birthYear;
 	private static int count = 0;
@@ -27,6 +28,7 @@ public class Person {
 	public Person(String name, int birthYear) {
 		this.name = name;
 		this.birthYear = birthYear;
+		count++;
 	}
 	
 	public int age(){
@@ -55,11 +57,16 @@ public class Person {
 	
 	public void output(){
 		
-		System.out.println("Person: " + name + ", " + name + " Year of birth: " + birthYear + ".");
+		System.out.println(name + " " + birthYear);
 	};
 	
 	public void changeName(String name){
 		this. name = name;
 	};
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", birthYear=" + birthYear + "]";
+	}
 	
 }
