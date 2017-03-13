@@ -12,18 +12,12 @@ public class Main {
 		// read 3 float numbers and check: are they all belong to the range
 		// [-5,5];
 
+		rang(2,3,4);
+		
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-		System.out.println("Enter a1,a2,a3");
-		float a1 = Float.parseFloat(br.readLine());
-		float a2 = Float.parseFloat(br.readLine());
-		float a3 = Float.parseFloat(br.readLine());
-
-		if (a1 >= -5 && a1 <= 5 && a2 >= -5 && a2 <= 5 && a3 >= -5 && a3 <= 5) {
-			System.out.println("all belong to the range [-5,5]");
-		} else {
-			System.out.println("all not belong to the range [-5,5]");
-		}
+		
+	
 
 		// read 3 integer numbers and write max and min of them;
 
@@ -116,4 +110,25 @@ public class Main {
 		
 		
 	}
+	
+	// read 3 float numbers and check: are they all belong to the range
+			// [-5,5];
+
+			
+//	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//	System.out.println("Enter a1,a2,a3");
+//	float a1 = Float.parseFloat(br.readLine());
+//	float a2 = Float.parseFloat(br.readLine());
+//	float a3 = Float.parseFloat(br.readLine());
+//			
+			
+			public static void rang(float a1,float a2,float a3) {
+				
+
+			if (a1 >= -5 && a1 <= 5 && a2 >= -5 && a2 <= 5 && a3 >= -5 && a3 <= 5) {
+				System.out.println("all belong to the range [-5,5]");
+			} else {
+				System.out.println("all not belong to the range [-5,5]");
+			}
+			}
 }

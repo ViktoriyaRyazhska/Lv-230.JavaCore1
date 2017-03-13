@@ -6,14 +6,15 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 import pack.oiu.Dog;
+import pack.oiu.Main;
 
 public class TestDog {
 
 	
 	Dog dog= new Dog();
 	@Test
-	public void testGetAge() {
-	Assert.assertEquals(17, dog.getAge());   ////!!!!!!!!!
+public void testRang(){
+		//Assert.assertEquals(, Main.rang(2,3,4));
 	}
 
 	@Test
