@@ -6,6 +6,10 @@ public class TenIntegerNumbers {
 
 	public static void main(String[] args) {
 		
+		int sum = 0;
+		
+		int product = 1;
+		
 		Scanner scan = new Scanner(System.in);
 		
 		int [] numbers = new int[10];
@@ -20,21 +24,13 @@ public class TenIntegerNumbers {
 			
 			if(numbers[j] >= 0){
 				
-				int sum = 0;
+				sum = sum + numbers[j];
 				
-				for (int k = 0; k <= 4; k++){
-					
-				sum = sum + numbers[k];
-				
-				if(j == 4 && k == 4){
-					System.out.println("The sum of first five numbers is: "+ sum);
+				if(j == 4){
+					System.out.println("The sum of first five numbers is: " + sum);
 				    }
 				  }
-				}
-		
 			else{
-				
-				int product = 1;
 				
 				for(j = 5; j <= 9; j++){
 					
