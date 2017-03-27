@@ -1,0 +1,4 @@
+
+public enum Breed { 
+	WEST_SIBERIAN_LAIKA, GOLDEN_RETRIEVER, 	DINGO;
+}
