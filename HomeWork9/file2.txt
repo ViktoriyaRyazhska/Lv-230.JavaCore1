@@ -1,0 +1,3 @@
+number of line: 4
+My Name is Vasyl. Birthday is: 14.01.1988
+the longest line is :Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
