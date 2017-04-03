@@ -10,7 +10,8 @@ public class DifferentBirds {
 		birds[3] = new Kiwi("grey or brown", 3);
 		
 		for (Bird bird : birds) {
-			System.out.println(bird.toString());
+			bird.fly();
+			System.out.println(bird.toString());	
 		}
 	}
 
