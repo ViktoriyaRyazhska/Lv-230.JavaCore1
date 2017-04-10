@@ -24,6 +24,8 @@ public class Main {
 		FileReader fr = null;
 		BufferedReader br = null;
 
+		
+		
 		try {
 			String s = null;
 			fr = new FileReader(fileName);
